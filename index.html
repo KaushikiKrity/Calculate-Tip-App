@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <title>Tip calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="heading">
+      <img src="./images/logo.svg" alt="" class="img">
+    </div>
+  <div class = "card">
+    <div class = "box1">
+      <div class="bill">
+        <p> Bill</p>
+        <p id="err1">Can't be Zero or Negative Value</p>
+        <div class="inner-element">
+          <img class="icon" src="./images/icon-dollar.svg" alt="" class="dollar-sign-svg" />
+          <input type= "number" id= "amount" placeholder="0">
+        </div>
+      </div>
+      <div class = "tipOptions">
+        <p>Select Tip %</p>
+        <div class ="percentage">
+          <lable for="t1"></lable>
+          <button id="t1" class="tipPercent" aria-label="tipButton" onclick="t1()">5%</button>
+          <lable for="'t2"></lable>
+          <button id="t2" class="tipPercent" aria-label="tipButton" onclick="t2()">10%</button>
+          <lable for="t3"></lable>
+          <button id="t3" class="tipPercent" aria-label="tipButton" onclick="t3()">15%</button> <br>
+          <lable for="t4"></lable>
+          <button id="t4" class="tipPercent" aria-label="tipButton" onclick="t4()">25%</button>
+          <lable for="t5"></lable>
+          <button id="t5" class="tipPercent" aria-label="tipButton" onclick="t5()">50%</button>
+          <input type="number" value="" class= "tipCustom" id="t6" placeholder="Custom" oninput="t6()">
+        </div>
+      </div>
+      <div class ="bill">
+        <p> Number of Person</p>
+        <div class = "inner-element-person">
+          <img class="icon" src="./images/icon-person.svg" alt="" class="person-sign-svg" />
+          <p id ="err2"> Can't be Zero or Negative Value</p>
+          <input type ="number" id ="people" placeholder="0">
+        </div>
+      </div>
+    </div>
+      <div class=" box2">
+        <div class ="amount">
+          <div class="calTip">
+          <p> Tip Amount<br> <span class="span1">/person</span></p>
+          <div  class="perPerson">
+            <p id="perPerson">$0.00</p>
+          </div>
+          </div>
+          <div class="disTip">
+          <p>Total<br> <span class="span1">/person</span> </p>
+          <div class=" perPersonTotal">
+            <p id="totalAmount">$0.00</p>
+          </div>
+        </div>
+        </div>
+        <div class = "reset">
+         <button id="button" disable onclick = "reset()"> RESET</button>
+        </div>
+
+      </div>
+
+  </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
