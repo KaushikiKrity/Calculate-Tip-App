@@ -193,7 +193,8 @@ main{
 }
 
 .perPerson{
-    font-size: 35px;
+    color:#2ba69b;
+    font-size: 40px;
     font-weight: 700;
 }
 .span1{
@@ -202,8 +203,10 @@ main{
     font-size: 12px;
     color:hsl(186, 14%, 43%) ;
 }
+
 .perPersonTotal{
-    font-size: 35px;
+    color:#2ba69b;
+    font-size: 40px;
     font-weight: 700;
 }
 
